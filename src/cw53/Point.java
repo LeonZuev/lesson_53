@@ -1,3 +1,5 @@
+package cw53;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 
@@ -21,7 +23,7 @@ public class Point {
 
   // этот метод прочитает точку с клавиатуры
   public static Point read(BufferedReader bufferedReader) throws IOException {
-    System.out.println("Введите координаты точки:");
+    System.out.println("Введите координаты точки через запятую:");
     String coordinates = bufferedReader.readLine();
     return parse(coordinates);
   }

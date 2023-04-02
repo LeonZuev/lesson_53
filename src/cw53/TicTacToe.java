@@ -1,3 +1,5 @@
+package cw53;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 
@@ -27,7 +29,7 @@ public class TicTacToe { // Крестики-нолики
     boolean finished = false;
     while (!finished) {
       Point newPoint = readCoordinates(bufferedReader);
-      // Point - координаты символа, readCoordinates - метод для их получения
+      // cw53.Point - координаты символа, readCoordinates - метод для их получения
       makeStep(newPoint); // makeStep - метод для того, чтобы сделать ход
       System.out.println(fieldToString());
       finished = checkField(); // checkField - метод для проверки того, завершена ли игра
