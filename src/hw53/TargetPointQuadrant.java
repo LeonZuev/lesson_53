@@ -29,12 +29,18 @@ public class TargetPointQuadrant {
 
   public static void main(String[] args) throws IOException {
     BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-    Point point = Point.read(bufferedReader);
-    System.out.println(targetQuadrant(point));
-
+    Point point = null;
+    try {
+      point = Point.read(bufferedReader);
+      System.out.println(targetQuadrant(point));
+    } catch (IOException e) {
+      System.out.println("Ошибка: некорректный ввод" + e.getMessage());
+    } catch (NumberFormatException e) {
+      System.out.println("Ошибка: некорректное число");
+    }
     System.out.println("Проверить положение точки относительно окружности? [y/n]");
     String checkCircleTarget = bufferedReader.readLine();
-    if (checkCircleTarget.equalsIgnoreCase("y")) {
+    if (checkCircleTarget.equalsIgnoreCase("y") && point != null) {
       String circleTargetResult = TargetPointCircle.targetCircle(point);
       System.out.println(circleTargetResult);//ла-ла-ла =))))
     }
