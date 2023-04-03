@@ -22,7 +22,7 @@ public class TargetPointCircle {
     BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
     int x = point.getX();
     int y = point.getY();
-    System.out.println("Введите границы заграницы");
+    System.out.println("Введите радиус границы заграницы");
     int r = Integer.parseInt(bufferedReader.readLine());
     ;
 

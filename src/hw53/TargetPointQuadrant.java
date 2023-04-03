@@ -31,6 +31,13 @@ public class TargetPointQuadrant {
     BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
     Point point = Point.read(bufferedReader);
     System.out.println(targetQuadrant(point));
+
+    System.out.println("Проверить положение точки относительно окружности? [y/n]");
+    String checkCircleTarget = bufferedReader.readLine();
+    if (checkCircleTarget.equalsIgnoreCase("y")) {
+      String circleTargetResult = TargetPointCircle.targetCircle(point);
+      System.out.println(circleTargetResult);//ла-ла-ла =))))
+    }
   }
 
   public static String targetQuadrant(Point point) {
