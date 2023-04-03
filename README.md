@@ -1,7 +1,7 @@
 # lesson_53
 Recurrence
 
-##cw53 pack:
+## cw53 pack:
 ## Tic-tac-toe game
 This lesson contanes three classes:
 cw53.Main, cw53.TicTacToe and cw53.Point.
@@ -15,7 +15,7 @@ checking if the game is over, making moves, and displaying the game board.
 Point class represents a point on the game board and provides
 methods for parsing user input and validating coordinates.
 
-##hw53 pack:
+## hw53 pack:
 TargetPointQuadrant class reads the coordinates of a point from user
 and determinaze in wich  quadrant of the coordinate plane it is located,
 or if it is on the X or Y axis, or if it is the origin [0,0].
